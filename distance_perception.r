@@ -20,7 +20,7 @@ y = 1*(2.71828^(-(x-min_dist)*(curvature_factor/max_dist)))
 #y[x<min_dist]=100
 y[y<min_scale]=0
 plot(x,y, ylab="scale %", xlab="distance in meters")
-
+#completed decay function
 
 if x<min_dist:
   y=100 #if distance is within a min threshold, scale text 100
