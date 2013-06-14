@@ -4,7 +4,7 @@ min_scale=0.2 #what is the smallest text possible?
 curvature_factor=4 #this defines how steep the change in distance perception (greater numbers yield more steep curves)
 
 #configuration
-xy=c(1:max_dist)
+x=c(1:max_dist)
 y=100*(max_dist-(x-min_dist))/(max_dist) #decay function  
 y[x<min_dist]=100
 y[y<min_scale]=0
