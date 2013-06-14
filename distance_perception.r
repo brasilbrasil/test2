@@ -11,7 +11,7 @@ y[y<min_scale]=0
 #y[y<min_scale]=min_scale
 plot(x,y, ylab="scale %", xlab="distance in meters")
 
-
+#new equation
 curvature_factor=5 #this defines how steep the change in distance perception (greater numbers yield more steep curves)
 x=c(1:max_dist) #test
 y = 1*(2.71828^(-(x-min_dist)*(curvature_factor/max_dist))) #test2
